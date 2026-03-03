@@ -1,0 +1,33 @@
+/* 공통 common.css */
+#wrap {}
+#wrap * {transition:all 0.5s;}
+#wrap .container {min-width:320px;}
+/* mobile disign - .sponsor_btn */
+#wrap .container .sponsor_btn {
+    width:164px; height:41px; /* display:block; margin:0 auto; */
+    background:linear-gradient(90deg,#FE9300, #FF7300);
+    border-radius:37.5px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+    /* gap:10px; */ /* gap 또는 margin-right를 통해 사이를 띄울 수 있음. */ 
+}
+#wrap .container .sponsor_btn:hover {
+    background:linear-gradient(90deg,#16A9C6,#02C7E6);
+}
+#wrap .container .sponsor_btn:hover::after {
+    animation:move 0.5s linear alternate infinite;
+}
+#wrap .container .sponsor_btn em {
+    margin-right:10px; color:#fff;
+    font-weight:500;
+}
+#wrap .container .sponsor_btn::after {
+    content:'>'; display:block;
+    color:#fff; font-size:0.75rem;
+}
+@keyframes move {
+    0% {transform:translateX(0);}
+    100% {transform:translateX(4px);}
+}
