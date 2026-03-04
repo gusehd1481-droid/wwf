@@ -26,8 +26,69 @@
 #wrap .intro h1 span {
     color:#fff;
     font-size:1.88rem;
-    display:block; line-height:1.3;
+    line-height:1.3;
 }
 #wrap .intro h1 span:nth-child(1) {}
-#wrap .intro h1 span:nth-child(2) {}
+#wrap .intro h1 span:nth-child(2) {display:block;}
 #wrap .intro .sponsor_btn {}
+/* =======================================2행========================================== */
+#wrap .quiz_bg {
+    background-image:url(../images/quiz_bg.png);
+    padding:70px;
+}
+#wrap .quiz_bg .quiz {display:flex; flex-flow:column nowrap;} /* t, d column -> row */
+#wrap .quiz_bg .quiz .quiz_list {margin:0 0 50px;}
+#wrap .quiz_bg .quiz .quiz_list > * {margin-bottom:16px;}
+#wrap .quiz_bg .quiz .quiz_list h1 {
+    font-size:1.5rem; line-height:1.2; letter-spacing:-0.01rem; font-weight:500;
+    font-family:Noto Sans KR, sans-serif; /* 단독 글꼴일 경우 */
+}
+#wrap .quiz_bg .quiz .quiz_list h2 {line-height:1.7;}
+#wrap .quiz_bg .quiz .quiz_list h2 span {
+    line-height:1.7;
+}
+#wrap .quiz_bg .quiz .quiz_list h2 span:nth-child(2) {
+    display:block;
+}
+#wrap .quiz_bg .quiz .quiz_list form {}
+#wrap .quiz_bg .quiz .quiz_list form ul {margin-bottom:16px;}
+#wrap .quiz_bg .quiz .quiz_list form ul > * {margin-bottom:8px;}
+#wrap .quiz_bg .quiz .quiz_list form ul li {margin-bottom:16px;}
+#wrap .quiz_bg .quiz .quiz_list form ul li:last-child {margin-bottom:0;}
+#wrap .quiz_bg .quiz .quiz_list form ul li input {display:none;}
+#wrap .quiz_bg .quiz .quiz_list form ul li input:checked + label {
+    background-image:url(../images/check_on.svg);
+}
+#wrap .quiz_bg .quiz .quiz_list form ul li label {
+    color:#fff; font-size:0.88rem;
+    background-image:url(../images/check_off.svg);
+    background-size:16px;
+    background-repeat:no-repeat;
+    padding-left:47.75px;
+}
+#wrap .quiz_bg .quiz .quiz_list form ul li:hover label {color:#16A9C6;}
+#wrap .quiz_bg .quiz .quiz_list form #answer_btn {
+    width:100%; padding:10px 0;
+    background-color:#050505;
+    color:#fff; border-radius:50px;
+    line-height:1.7;
+}
+#wrap .quiz_bg .quiz .quiz_list form #answer_btn:hover {
+    background:linear-gradient(90deg,#16A9C6,#02C7E6);
+}
+#wrap .quiz_bg .quiz .quiz_status {}
+#wrap .quiz_bg .quiz .quiz_status img {
+    width:100%;
+    margin-bottom:20px;
+}
+#wrap .quiz_bg .quiz .quiz_status p {
+    font-size:1.25rem;
+    text-align:right;
+}
+/* =========공통 선택자============ */
+#wrap .quiz_bg .quiz .quiz_list h1,
+#wrap .quiz_bg .quiz .quiz_list h2 span,
+#wrap .quiz_bg .quiz .quiz_status p {
+    color:#fff;
+    line-height:1.7;
+}

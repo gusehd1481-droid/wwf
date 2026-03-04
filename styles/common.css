@@ -2,6 +2,8 @@
 #wrap {}
 #wrap * {transition:all 0.5s;}
 #wrap .container {min-width:320px;}
+#wrap .container .contents {max-width:1250px; margin:0 auto;}
+
 /* mobile disign - .sponsor_btn */
 #wrap .container .sponsor_btn {
     width:164px; height:41px; /* display:block; margin:0 auto; */
