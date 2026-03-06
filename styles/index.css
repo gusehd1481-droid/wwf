@@ -92,3 +92,129 @@
     color:#fff;
     line-height:1.7;
 }
+/* =================================3행==================================== */
+#wrap .video_bg {
+    background-image:url(../images/video_bg.png);
+}
+#wrap .video_bg .video h1 {}
+#wrap .video_bg .video iframe {width:100%; margin-bottom:70px;}
+/* =================================4행==================================== */
+#wrap .reduction_bg {
+    background-image:url(../images/minus_50per_bg.png);
+    padding:70px 15px;
+}
+#wrap .reduction_bg .reduction h1 {}
+#wrap .reduction_bg .reduction p {}
+#wrap .reduction_bg .reduction p img {width:100%;}
+/* =================================5행==================================== */
+#wrap .humanity_bg {
+    background-color:#f5f5f5;
+}
+#wrap .humanity_bg .humanity .list {
+    display:flex;
+    flex-flow:column nowrap;
+    gap:20px;
+    /* display:grid; grid-template-rows:1fr 1fr 1fr; */
+}
+#wrap .humanity_bg .humanity .list li {}
+#wrap .humanity_bg .humanity .list li:nth-child(1) dl {
+    background-image:url(../images/melt_28t.png);
+}
+#wrap .humanity_bg .humanity .list li:nth-child(2) dl {
+    background-image:url(../images/melt_27cm.png);
+}
+#wrap .humanity_bg .humanity .list li:nth-child(3) dl {
+    background-image:url(../images/wwf.jpg);
+}
+#wrap .humanity_bg .humanity .list li dl {
+    padding:48px 0;  
+    background-size:cover; 
+    background-position:center;
+    text-align:center; 
+    position:relative;
+}
+#wrap .humanity_bg .humanity .list li dl * {
+    color:#fff; position:relative; z-index:11; 
+}
+#wrap .humanity_bg .humanity .list li dl:before {
+    content:''; display:block; width:100%; height:100%;
+    background:linear-gradient(#000, #000,transparent, transparent, transparent, transparent);
+    position:absolute; left:0; top:0; z-index:10;
+}
+#wrap .humanity_bg .humanity .list li dl dt {
+    font-size:1.38rem; line-height:1.2;
+    margin-bottom:11px; 
+}
+#wrap .humanity_bg .humanity .list li dl dd {
+    line-height:1.7;
+}
+#wrap .humanity_bg .humanity .list li .txt {
+    background-color:#fff;
+}
+#wrap .humanity_bg .humanity .list li .txt p {padding:20px; line-height:1.7;}
+/* =================================6행==================================== */
+#wrap .crisis_bg {
+    background-image:url(../images/minus_50per_bg.png);
+}
+#wrap .crisis_bg .crisis h1 {}
+#wrap .crisis_bg .crisis p {}
+#wrap .crisis_bg .crisis p img {width:100%;}
+/* ======================================7행============================ */
+#wrap .wwf_bg {
+    background-image:url(../images/wwf.jpg);
+    position:relative;
+}
+#wrap .wwf_bg:before {
+    content:''; display:block; width:100%; height:100%;
+    background-color:#fff; opacity:0.8;
+    position:absolute; left:0; top:0; z-index:10;
+}
+#wrap .wwf_bg .wwf {}
+#wrap .wwf_bg .wwf * {
+    text-align:center;
+    position:relative; z-index:11;
+}
+#wrap .wwf_bg .wwf h1 {
+    font-size:1.88rem; font-weight:700; line-height:1.3;
+}
+#wrap .wwf_bg .wwf p {font-size:0.81rem;}
+#wrap .wwf_bg .wwf p:nth-child(1) {}
+#wrap .wwf_bg .wwf p:nth-child(2) {}
+/* ======================================8행============================ */
+#wrap .activity_bg {}
+#wrap .activity_bg .activity {}
+#wrap .activity_bg .activity h1 {
+    text-align:center;
+    margin-bottom:40px;
+}
+#wrap .activity_bg .activity .details {
+    display:grid;
+    grid-template-areas:
+        'public'
+        'corporation'
+        'nature';
+    gap:20px;
+}
+#wrap .activity_bg .activity .details * {color:#fff;}
+#wrap .activity_bg .activity .details li {
+    padding-top:94px;
+    background-size:cover; background-position:center;
+}
+#wrap .activity_bg .activity .details li:nth-child(1) {
+    grid-area:public; /* grid 2차원 정렬을 위한 자식 이름 짓기 (대중) */
+    background-image:url(../images/melt_28t.png);
+}
+#wrap .activity_bg .activity .details li:nth-child(2) {
+    grid-area:corporation;
+    background-image:url(../images/wwf.jpg);
+}
+#wrap .activity_bg .activity .details li:nth-child(3) {
+    grid-area:nature;
+    background-image:url(../images/minus_50per.png);
+}
+#wrap .activity_bg .activity .details li .txt {
+    padding:20px;
+    background-color:rgba(0,0,0,0.5);
+}
+#wrap .activity_bg .activity .details li .txt dt {font-size:1.38rem; margin-bottom:18px;}
+#wrap .activity_bg .activity .details li .txt dd {font-size:0.81; line-height:1.7;}

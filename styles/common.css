@@ -1,12 +1,30 @@
 /* 공통 common.css */
 #wrap {}
 #wrap * {transition:all 0.5s;}
-#wrap .container {min-width:320px;}
+#wrap .container {
+    min-width:320px;
+    background-size:cover; background-position:center; 
+    padding:70px 15px;
+}
 #wrap .container .contents {max-width:1250px; margin:0 auto;}
-
+#wrap .container .contents h1 {
+    font-size:1.38rem; line-height:1.2; letter-spacing:-0.01em; font-weight:500; margin-bottom:22px;
+}
+#wrap .container .contents h1 .highlight {
+    background-color:#fff; color:#050505; font-weight:500;
+}
+#wrap .container .contents h1+p {
+    font-size:0.81rem; line-height:1.7; margin-bottom:22px;
+}
+#wrap .video,
+#wrap .humanity {text-align:center;}
+#wrap .container .reduction h1, 
+#wrap .container  .crisis h1 {color:#fff;} 
+#wrap .container .reduction p,
+#wrap .container  .crisis p {color:#fff;}
 /* mobile disign - .sponsor_btn */
 #wrap .container .sponsor_btn {
-    width:164px; height:41px; /* display:block; margin:0 auto; */
+    width:164px; height:41px; display:block; margin:0 auto;
     background:linear-gradient(90deg,#FE9300, #FF7300);
     border-radius:37.5px;
     display:flex;

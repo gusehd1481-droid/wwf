@@ -5,16 +5,39 @@
     #wrap .quiz_bg .quiz {flex-flow:row nowrap; justify-content:space-between;} /* t, d column -> row */
     #wrap .quiz_bg .quiz .quiz_list {width:200px;}
     #wrap .quiz_bg .quiz .quiz_status {flex:1;}
+    #wrap .video_bg .video iframe {height:300px;}
+    /* =====================================5행 */
+    #wrap .humanity_bg .humanity .list {flex-flow:row nowrap;}
+    #wrap .humanity_bg .humanity .list li {flex:1;}
+    #wrap .humanity_bg .humanity .list li dl {
+        flex:1; height:320px;
+    }
+    /* ======================7행 */
+    #wrap .wwf_bg .wwf h1+p {
+        font-size:1.38rem;
+        letter-spacing:0;
+    }
+    #wrap .wwf_bg .wwf p {
+        font-size:1.38rem;
+        letter-spacing:0;
+    }
 }
 @media screen and (min-width:866px) {
     #wrap .intro { padding:300px 0 100px;}
+    #wrap .container {padding:200px 80px;}
     #wrap .quiz_bg .quiz {
     flex-flow:row nowrap;
     } /* t, d column -> row */
     /* ========================2행 퀴즈 */
     #wrap .quiz_bg .quiz .quiz_list {width:300px;}
+    /* =========================3행 */
+    #wrap .video_bg .video iframe {height:500px;}
+    /* =========================4행 */
+    /* ========================5행 */
 }/* 866~1023 */
 @media screen and (min-width:1024px) {
+    #wrap .container .contents h1 {font-size:2.5rem;}
+    #wrap .container .contents h1+p{font-size:1.38rem;}
     #wrap .intro { padding:410px 0 100px;}
     #wrap .intro .logo {left:36px; top:30px;}
     #wrap .intro h1 {margin:0 0 100px;}
@@ -29,6 +52,21 @@
     #wrap .quiz_bg .quiz .quiz_list form #answer_btn {font-size:1.25rem;}
     #wrap .quiz_bg .quiz .quiz_list {width:400px;}
     #wrap .quiz_bg .quiz .quiz_list h2 span:nth-child(2) {display:inline-block;}
+    /* ========================================3행 */
+    #wrap .video_bg .video iframe {height:600px;}
+    /* ========================================7행*/
+    #wrap .wwf_bg .wwf h1 {font-size:3.13rem;}
+    #wrap .wwf_bg .wwf p {font-size:1.38rem;}
+    /* ========================================8행*/
+    #wrap .activity_bg .activity .details {
+        grid-template-areas:
+            'public nature'
+            'corporation nature';
+        grid-template-columns:1fr 1fr;
+    }
+    #wrap .activity_bg .activity .details li {position:relative; padding-bottom:30px;}
+    #wrap .activity_bg .activity .details li .txt {width:50%;}
+    #wrap .activity_bg .activity .details li:nth-child(3) .txt {position:absolute; left:0; bottom:31px;}
 }/* 1024~1249*/
 @media screen and (min-width:1250px) {
     #wrap .intro { padding:449px 0 100px;}
@@ -42,4 +80,8 @@
     /* ========================2행 퀴즈 */
     #wrap .quiz_bg .quiz .quiz_list {width:400px;}
     #wrap .quiz_bg .quiz .quiz_list h1 {font-size:3.44rem;}
+    /* ========================================7행*/
+    #wrap .wwf_bg .wwf h1 {font-size:4.38rem;}
+    #wrap .wwf_bg .wwf h1+p {font-size:2.13rem;}
+    #wrap .wwf_bg .wwf p {font-size:2.13rem;}
 }/* 1250~max */
