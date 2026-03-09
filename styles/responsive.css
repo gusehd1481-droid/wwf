@@ -12,6 +12,7 @@
     #wrap .humanity_bg .humanity .list li dl {
         flex:1; height:320px;
     }
+    #wrap .humanity_bg .humanity .list li .txt {height:250px;}
     /* ======================7행 */
     #wrap .wwf_bg .wwf h1+p {
         font-size:1.38rem;
@@ -21,6 +22,8 @@
         font-size:1.38rem;
         letter-spacing:0;
     }
+    /* ============================9행 */
+    #wrap .gift_bg .gift .list li .gift_img {height:300px;}
 }
 @media screen and (min-width:866px) {
     #wrap .intro { padding:300px 0 100px;}
@@ -34,6 +37,9 @@
     #wrap .video_bg .video iframe {height:500px;}
     /* =========================4행 */
     /* ========================5행 */
+    /* ============================9행 */
+    #wrap .gift_bg .gift .title h1 {font-size:3.44rem;}
+    #wrap .gift_bg .gift .list li .gift_img {height:300px;}
 }/* 866~1023 */
 @media screen and (min-width:1024px) {
     #wrap .container .contents h1 {font-size:2.5rem;}
@@ -54,6 +60,8 @@
     #wrap .quiz_bg .quiz .quiz_list h2 span:nth-child(2) {display:inline-block;}
     /* ========================================3행 */
     #wrap .video_bg .video iframe {height:600px;}
+    /* =========================================5행 */
+    #wrap .humanity_bg .humanity .list li .txt {height:200px;}
     /* ========================================7행*/
     #wrap .wwf_bg .wwf h1 {font-size:3.13rem;}
     #wrap .wwf_bg .wwf p {font-size:1.38rem;}
@@ -67,6 +75,22 @@
     #wrap .activity_bg .activity .details li {position:relative; padding-bottom:30px;}
     #wrap .activity_bg .activity .details li .txt {width:50%;}
     #wrap .activity_bg .activity .details li:nth-child(3) .txt {position:absolute; left:0; bottom:31px;}
+    /* ========================================9행*/
+    #wrap .gift_bg {text-align:right;}
+    #wrap .gift_bg .gift .title {
+        flex-flow:row nowrap;
+        align-items:flex-end;
+    }
+    #wrap .gift_bg .gift .title h1 {margin:0}
+    #wrap .gift_bg .gift .list {
+        grid-template-areas:
+            'pouch echoback'
+            'keyring keyring';
+        grid-template-columns:1fr 1fr;
+        gap:22px;
+    }
+    #wrap .gift_bg .gift .list li .gift_img {height:300px;}
+    #wrap .gift_bg .gift .list li .gift_img img {transform:translateY(0);}
 }/* 1024~1249*/
 @media screen and (min-width:1250px) {
     #wrap .intro { padding:449px 0 100px;}
@@ -80,8 +104,29 @@
     /* ========================2행 퀴즈 */
     #wrap .quiz_bg .quiz .quiz_list {width:400px;}
     #wrap .quiz_bg .quiz .quiz_list h1 {font-size:3.44rem;}
+    /* =======================================5행 */
+    #wrap .humanity_bg .humanity .list li .txt {height:160px;}
     /* ========================================7행*/
     #wrap .wwf_bg .wwf h1 {font-size:4.38rem;}
     #wrap .wwf_bg .wwf h1+p {font-size:2.13rem;}
     #wrap .wwf_bg .wwf p {font-size:2.13rem;}
-}/* 1250~max */
+    /* ========================================9행*/
+    #wrap .gift_bg {text-align:center;}
+    #wrap .gift_bg .gift .title h1 {font-size:3.44rem;}
+    #wrap .gift_bg .gift .list {
+        gap:45px;
+        display:flex;
+        grid-template-areas:
+            'pouch' 'echoback' 'keyring';
+        grid-template-columns:1fr 1fr 1fr;
+    }
+    #wrap .gift_bg .gift .list li .gift_img img {transform:translateY(0);}
+    #wrap .gift_bg .gift .list li h2,
+    #wrap .gift_bg .gift .list li p {font-size:1.25rem;}
+    #wrap .gift_bg .gift > p {font-size:1.25rem;}
+    /* ===========================================10행 */
+    #wrap .notice_bg {padding:100px 225px;}
+    #wrap .notice_bg .notice dl dt {font-size:2.13rem;}
+    #wrap .notice_bg .notice dl dd {font-size:1.25rem;}
+}   
+/* 1250~max */
